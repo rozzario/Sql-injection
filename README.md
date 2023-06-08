@@ -3,6 +3,7 @@ Execution de la vulnérabilité d'injection SQL sur Service Provider Management 
 
 #### Exploit Title: Service Provider Management System v1.0 - SQL Injection
 #### Date: 2023-05-23
+####CVE:2023-2769
 #### Exploit Author: Ashik Kunjumon
 #### Vendor Homepage: https://www.sourcecodester.com/users/lewa
 #### Software Link: https://www.sourcecodester.com/php/16501/service-provider-management-system-using-php-and-mysql-source-code-free-download.html
