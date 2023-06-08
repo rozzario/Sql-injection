@@ -43,6 +43,8 @@ vérifier l'injection SQL.
 
 ###Etape 3 - Exécuter sqlmap -u " http://localhost/php-spms/?page=services/view&id=2"
 -p id --dbms=mysql
+![Capture d’écran du 2023-06-07 12-28-10](https://github.com/rozzario/Sql-injection/assets/36795507/2c9031bf-6a4a-4088-ba69-db88857a0107)
+![Capture d’écran du 2023-06-07 12-32-36](https://github.com/rozzario/Sql-injection/assets/36795507/c1bdd34d-ac46-4898-819c-77600e8756e9)
 
 
 
