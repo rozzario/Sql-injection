@@ -27,4 +27,5 @@ Pour cette étape nous essayerons de déployer l’application sur xampp.
 
 
 On cré une base de donnée portant le nom de #####spms_db
+![Capture d’écran du 2023-06-07 12-14-55](https://github.com/rozzario/Sql-injection/assets/36795507/29b5a31f-3d3c-48f8-937c-ca2cf1810f6d)
 
